@@ -1,0 +1,29 @@
+{
+    "version": "0.0.311",
+    "description": "Free Voice and Text Chat",
+    "homepage": "https://discordapp.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://discordapp.com/terms"
+    },
+    "url": "http://dl.discordapp.net/apps/win/Discord-0.0.311-full.nupkg#/dl.7z",
+    "hash": "sha1:3928a4af8e249184f2d4212bd8c958adc8B2ff4f",
+    "extract_dir": "lib\\net45",
+    "bin": "Discord.exe",
+    "shortcuts": [
+        [
+            "Discord.exe",
+            "Discord"
+        ]
+    ],
+    "checkver": {
+        "url": "https://discordapp.com/api/updates/RELEASES",
+        "regex": "Discord-([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://dl.discordapp.net/apps/win/Discord-$version-full.nupkg#/dl.7z",
+        "hash": {
+            "url": "https://discordapp.com/api/updates/RELEASES"
+        }
+    }
+}
